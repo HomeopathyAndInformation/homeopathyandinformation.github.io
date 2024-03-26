@@ -1,0 +1,91 @@
+@import "/styles/master.css";
+
+
+.chanone7-definitions h1 {
+    margin: 1em;
+}
+
+.text {
+    margin: 2em;
+    line-height: 1.5em;
+    max-width: 85%;
+}
+
+.chanone7-definitions ul {
+    margin-bottom: 2em;
+}
+
+.chanone7-definitions li {
+    margin: 1em;
+}
+
+.chanone7-definitions a {
+    display: block;
+    margin: 1em 2em;
+}
+
+.chanone7-definitions img {
+    float: right;
+    width: 500px;
+    height: 400px;
+    margin: 0 2em;
+
+    border-radius: 10px !important;
+    box-shadow: 1px -1px 10px gray !important;
+}
+
+.book {
+    display: block;
+    text-align: center;
+
+    color: var(--text-color-bright);
+    background-color: var(--button-color);
+
+    margin: 2em auto;
+    padding: 1em 0;
+
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1.3em;
+
+    width: 60%;
+
+    transition: all 0.3s linear;
+}
+
+
+/*
+.chanone7-definitions h1 {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.text {
+    margin-bottom: 2em;
+    line-height: 1.1em;
+    max-width: 85%;
+    margin-left: 2em;
+}
+
+.chanone7-definitions li {
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.chanone7-definitions a {
+    margin-left: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.chanone7-definitions img {
+    float: right;
+    width: 500px;
+    height: 400px;
+    margin: 0 2em;
+
+    border-radius: 10px !important;
+    box-shadow: 1px -1px 10px gray !important;
+}*/
+

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" dir="<?=$langdir?>">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Chanone 7 Description">
+    <meta name="keywords" content="Alternative, Medicine, Medical, Appointment, Online, Meeting">
+    <meta name="author" content="Abdul Razzak Merhi">
+
+    <link rel="stylesheet" href="/styles/foodmood.css">
+
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    
+    <script src="https://kit.fontawesome.com/dd8e71c06a.js" crossorigin="anonymous"></script>
+
+    <title>Chanone 7 - FoodMood</title>
+</head>
+<body>
+    <div class="header">
+        <header>
+            <img src="/images/Chanone7_Logo_Horizontal.svg" alt="Chanone 7 Logo">
+            <label for="menubox">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <input type="checkbox" id="menubox">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <!--<li><a href="/pricing.php">Booking & Pricing</a></li>-->
+                <!--<li style="display:none;"><a href="/consultation.php">Consultation</a></li>-->
+                <li><a href="/foodmood.html">Food Mood</a></li>
+                <li><a href="/supplements.html">Supplements</a></li>
+                <!--<li ><a href="/login/login.php">Signup/Login</a></li>-->
+                <!--<li ><a href="/account/admin/meetings.php" >My Meetings</a></li>-->
+                <!--<li ><a href="/account/appointments.php">My Appointments</a></li>-->
+                <!--<li ><a href="/account/admin/admin.php">Admin</a></li>-->
+                <!--<li ><a href="/account/account.php">Account</a></li>-->
+                <li><a href="/qna.html">FAQ</a></li>
+                <!--<li ><a href="/login/logout.php">Logout</a></li>-->
+            </ul>
+            <!--<img class="language-select" src="/images/planet-globe.svg">-->
+            <hr>
+            <section class="language-select">
+                <p language="english">English</p>
+                <p language="french">French</p>
+                <p language="arabic">Arabic</p>
+            </section>
+            <script src="/scripts/nav.js"></script>
+        </nav>
+    </div>
+
+    <main class="foodmood">
+        <!--
+        <section class="ketogenic">
+            <h1>Ketogenic Diet for weight managements</h1>
+            <span>(Depending on where you live, you may have to adjust these recommendations)</span>
+            <div class="food-list">
+                <h2>Fat</h2>
+                <ul>
+                    <li>Avocado</li>
+                    <li>Avocado oil</li>
+                    <li>Cocoa butter</li>
+                    <li>Coconut butter (oil)</li>
+                    <li>Ghee (goat or sheep)</li>
+                    <li>Macadamia oil</li>
+                    <li>Olive oil</li>
+                    <li>Sunflower oil</li>
+                    <li>Sesame oil</li>
+                    <li>Walnut oil</li>
+                    <li>Grapeseed oil</li>
+                    <li>Orgnanic butter (cow)</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Dairy</h2>
+                <ul>
+                    <li>Goat cheese</li>
+                    <li>Sheep cheese</li>
+                    <li>Sour cream (organic)</li>
+                    <li>Goat and sheep yogurt</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Protein</h2>
+                <ul>
+                    <li>Beef (grass-fed)</li>
+                    <li>Chicken</li>
+                    <li>Goat</li>
+                    <li>Lamb</li>
+                    <li>Eggs</li>
+                    <li>Bison and deer</li>
+                    <li>Goose</li>
+                    <li>Duck</li>
+                    <li>Turkey</li>
+                    <li>Veal (grass-fed)</li>
+                    <li>Rabbit</li>
+                    <li>Quail</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Fish and Seafood</h2>
+                <ul>
+                    <li>Anchovies</li>
+                    <li>Bass</li>
+                    <li>Flounder</li>
+                    <li>Halibut</li>
+                    <li>Red snapper</li>
+                    <li>Salmon</li>
+                    <li>Sardines</li>
+                    <li>Sole</li>
+                    <li>Lobster</li>
+                    <li>Oysters</li>
+                    <li>Crab</li>
+                    <li>Clams</li>
+                    <li>Octopus</li>
+                    <li>Squid</li>
+                    <li>Scallops</li>
+                    <li>Caviar</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Nuts and Seeds</h2>
+                <ul>
+                    <li>Almonds</li>
+                    <li>Brazil nuts</li>
+                    <li>Chia seeds</li>
+                    <li>Hazelnuts</li>
+                    <li>Hemp seeds</li>
+                    <li>Macadamia nuts</li>
+                    <li>Pecans and Walnuts</li>
+                    <li>Pine nuts</li>
+                    <li>Pistachios</li>
+                    <li>Pumpkin seeds</li>
+                    <li>Sesame</li>
+                    <li>Sunflower</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Vegetables</h2>
+                <ul>
+                    <li>Artichokes</li>
+                    <li>Aspargus</li>
+                    <li>Leafy greens (all salads)</li>
+                    <li>Bok choy</li>
+                    <li>Broccoli</li>
+                    <li>Brussels sprouts</li>
+                    <li>Cabbage (red and green)</li>
+                    <li>Carrots</li>
+                    <li>Cauliflower</li>
+                    <li>Celery</li>
+                    <li>Chard (Swiss)</li>
+                    <li>Cucumbers</li>
+                    <li>Eggplant</li>
+                    <li>Fennel</li>
+                    <li>Garlic</li>
+                    <li>Green beans</li>
+                    <li>Kale</li>
+                    <li>Spinach</li>
+                    <li>Dandelion</li>
+                    <li>Kohlrabi</li>
+                    <li>Leeks and onions</li>
+                    <li>Okra</li>
+                    <li>Mushrooms (fresh)</li>
+                    <li>Olives</li>
+                    <li>Peppers (all)</li>
+                    <li>Pumpkin (all)</li>
+                    <li>Radicchio</li>
+                    <li>Radishes</li>
+                    <li>Rhubarb</li>
+                    <li>Sauerkraut</li>
+                    <li>Seaweed</li>
+                    <li>Tomatoes (organic)</li>
+                    <li>Watercress</li>
+                    <li>Zuccini</li>
+                    <li>Red beets</li>
+                    <li>Turnips</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Fruit and Berries</h2>
+                <ul>
+                    <li>Apples</li>
+                    <li>Pomelo</li>
+                    <li>Grapefruit</li>
+                    <li>Lemon</li>
+                    <li>Lime</li>
+                    <li>Berries (all)</li>
+                    <li>Red and black Currents</li>
+                    <li>Strawberries</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Herbs, Spices, and Condiments</h2>
+                <ul>
+                    <li>Allspice</li>
+                    <li>Basil</li>
+                    <li>Cardamon</li>
+                    <li>Chives</li>
+                    <li>Peppers</li>
+                    <li>Coriander</li>
+                    <li>Cloves</li>
+                    <li>Cumin</li>
+                    <li>Curry powder</li>
+                    <li>Dill</li>
+                    <li>Ginger</li>
+                    <li>Nutmeg</li>
+                    <li>Oregano</li>
+                    <li>Paprika</li>
+                    <li>Parsley</li>
+                    <li>Rosemary</li>
+                    <li>Sage</li>
+                    <li>Thyme</li>
+                    <li>Turmeric</li>
+                    <li>Herbal salt</li>
+                    <li>Gluten-free Tamari</li>
+                    <li>Mayonnaise</li>
+                    <li>Mustard</li>
+                    <li>Vinegar</li>
+                    <li>Hot sauce</li>
+                    <li>Pickles</li>
+                    <li>Dark Chocolate 100%</li>
+                    <li>Vanilla</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Liquids</h2>
+                <ul>
+                    <li>Broth (chicken, beef)</li>
+                    <li>Coffee</li>
+                    <li>Teas and Herbal Teas</li>
+                    <li>Kombucha</li>
+                    <li>Sparkling Water</li>
+                    <li>Almond and Coconut Milk (unsweetened)</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Vegan Protein</h2>
+                <ul>
+                    <li>Hummus</li>
+                    <li>Mushrooms</li>
+                    <li>Chia</li>
+                    <li>Nut butters</li>
+                    <li>Nutritional Yeast</li>
+                    <li>Protein powder (Pea,</li>
+                    <li></li>
+                    <li>Seeds (Sunflower,</li>
+                    <li>Lentils</li>
+                    <li>Hemp, Brown Rice)</li>
+                    <li></li>
+                    <li>Sesame, Pumpkin)</li>
+                    <li>Sprouted beans</li>
+                    <li>Tofu (organic)</li>
+                    <li>Spirulina</li>
+                    <li>Chlorella</li>
+                </ul>
+            </div>
+
+            <h1>Foods to Avoid</h1>
+
+            <h2>Protein</h2>
+            <p>Almond milk, soymilk, coconut milk (sweetened), yogurt, processed cheese and meat, sausagfir (unless plain and full fat)</p>
+
+            <h2>Vegetables and Starches</h2>
+            <p>Corn, popcorn, canned vegetables, potatoes, sweet potatoes, yams</p>
+
+            <h2>Grains and Legumes</h2>
+            <p>Bread, oats, pasta, rice, wheat, rye, barey, spelt, millet and all GMO grains, beans, adamame</p>
+
+            <h2>Fruits</h2>
+            <p>Apricots, bananas, all types of melons, cherries, dates, died, fruit, grapes, kiwi, mangos, oranges, mandarins, peaches, pineapples, plaintain, plums</p>
+
+            <div class='warning'>
+                <h2>Warning</h2>
+                <p>The keto diet could cause <b>low blood pressure, kidney stones, constipation, nutient, deficiencies, and an increase risk of heart disease</b>. Strict diets like keto could also cause social isolation or disordered eating. Keto is not sage for those with any conditions involving their Kidney, pancreas, liver, thyroid, or gallbladder.</p>
+            </div>
+        </section>
+
+        <hr>
+
+-->
+
+        <h1>Mediterranean Diet</h1>
+
+        <p>In a perfect world, every human would eat properly and have access to healthy food
+            from the beginning of life. That is not always the case. Most of us must learn to eat
+            properly--even as grown-ups--as our food is changing.</p>
+        <p>Most folks aren&#39;t even aware that the changes made to our wheat and cow dairy
+            industries may negatively affect your organs. Many people have developed food
+            intolerances and allergies as example: gluten, lactose, casein etc… unnecessarily.
+            There are many micro-adjustments you can make to what you eat and drink that will
+            have tectonic effects to your body and your health.</p>
+        <section class="meditera">
+
+                <div class="images">
+                    <img src="/images/food_1.jpg">
+                    <img src="/images/blueberrypepper.jpg">
+                    <img src="/images/food_4.jpg">
+                </div>
+
+                <h2 class="orange">Recommended Food Items to Enhance Recovery and General Well-being</h2>
+
+                <p class="foodcaution">Ideally, all items mentioned below should be organically grown</p>
+
+                <div class="food-list">
+
+                    <h3>Foods for your health</h3>
+
+                    <h2>Bread & Pasta from Whole grains</h2>
+                    <p>Spelt, oats, brown rice, rye, barley, corn, buckwheat, sourdough</p>
+
+                    <h2>Dairy</h2>
+                    <p>Goat and sheep milk, cheese, yogurt, and ghee</p>
+
+                    <h2>Eggs</h2>
+                    <p>Chicken, quail, duck</p>
+
+                    <h2>Fish</h2>
+                    <p>Salmon, sardines, red snapper, trout, tuna, anchovies, mackerel, bass, sole...</p>
+
+                    <h2>Fruits</h2>
+                    <p>Apples, bananas, oranges, pears, strawberries, grapes, dates, figs, melons, peaches, berries, grapefruits, lemons, limes, apricots, prunes, melons, pomegranates</p>
+
+                    <h2>Healthy fats</h2>
+                    <p>Avocadoes, olives, extra virgin olive oil, sesame oil, tahini, grape seed oil, sunflower oil, avocado oil</p>
+
+                    <h2>Herbs</h2>
+                    <p>Garlic, basil, mint, parsley, cilantro, oregano, thyme...</p>
+
+                    <h2>Legumes</h2>
+                    <p>Beans, peas, lentils, pulses, chickpeas...</p>
+
+                    <h2>Livestock and Poultry, fed by natural grains and grass</h2>
+                    <p>Lamb, goat, chicken, duck, turkey, quail</p>
+
+                    <h2>Nuts and seeds</h2>
+                    <p>Almonds, walnuts, macadamia nuts, hazelnuts, chestnuts, pine nuts, cashews, sunflower seeds, pumpkin seeds, almond butter, peanut butter</p>
+
+                    <h2>Seafood</h2>
+                    <p>Shrimp, octopus, calamari, oysters, clams, crab, mussels</p>
+
+                    <h2>Spices</h2>
+                    <p>Pepper, himalayan sea salt, himalayan, dill, chives, cumin, garlic, rosemary, sage, nutmeg, cinnamon, chili, mediterranean 7 spices...</p>
+
+                    <h2>Vegetables</h2>
+                    <p>Tomatoes, eggplant, zucchini, broccoli, avocado, kale, spinach, onions, cauliflower, carrots, Brussels, sprouts, okra, cucumbers, potatoes, sweet, potatoes, turnip, cucumber, cabbage, radish, all green salads, rucola, dandelions, artichokes, Swiss chard, funnel...</p>
+
+                    <h2 class="orange">Foods to eliminate</h2>
+
+                    <h3>Highly processed foods</h3>
+                    <p>White flour and its byproducts, white bread, pasta, tortillas, chips, crackers,
+cow milk and its byproducts, process salt, added white sugar is found in
+many foods but especially high in soda, candies, ice cream, table sugar,
+corn syrup, granola bars, and baked good, trans fats found in margarine, commercial
+mayonnaise and ketchup, fried foods, and other processed foods, palm oil, canola oil, cottonseed oil, Processed meat, processed sausages, hot
+dogs, deli meats, canned food beef jerky, fast food, convenience meals,
+microwave food and popcorn…and food restaurants</p>
+
+                    <div class="warning">
+                        <h2 class="orange">To avoid for 5 weeks</h2>
+                        <p>Mint, Caffeine, Alcohol, Milk Chocolate</p>
+                    </div>
+                </div>
+
+                <article class="reference-article">
+                    <h2>Recommended Recipes</h2>
+                    <p><a target="_blank" href="https://www.eatingwell.com/gallery/7994516/mediterranean-diet-dinners-to-bring-in-fall/">20 Mediterranean Diet Dinners to Bring in Fall</a></p>
+                    <p><a target="_blank" href="https://www.eatingwell.com/gallery/7994632/diabetes-friendly-weight-loss-recipes/">25 Diabetes-Friendly Recipes That Can Help You Lose Weight</a></p>
+                    <p><a target="_blank" href="https://www.eatingwell.com/gallery/7994787/20-minute-diabetes-friendly-mediterranean-diet-dinners/">20 Mediterranean Diet Dinners That Are Diabetes-Friendly and Ready in 20 Minutes</a></p>
+                    <p><a target="_blank" href="https://www.eatthis.com/chocolate-brands-highest-quality-ingredients/">8 Chocolate Brands That Use the Highest Quality Ingredients</a></p>
+                    <p><a target="_blank" href="https://www.goodhousekeeping.com/health/diet-nutrition/g40970417/low-carb-vegetables/">15 Low-Carb Vegetables Registered Dietitians Love</a></p>
+                    <p><a target="_blank" href="https://www.eatingwell.com/gallery/7996173/15-minute-mediterranean-diet-dinners/">15 Mediterranean Diet Dinners You Can Make in 15 Minutes</a></p>
+                    <p><a target="_blank" href="https://www.eatingwell.com/gallery/7993600/easy-high-protein-anti-inflammatory-breakfast-recipes/">18 Easy High-Protein Breakfast Recipes That Can Help Reduce Inflammation</a></p>
+                </article>
+
+                <div class="images">
+                    <img src="/images/lemon_tree.jpg" class="vertical">
+                    <img src="/images/food_6.jpg" class="vertical">
+                    <img src="/images/food_7.jpg" class="vertical">
+                    <img src="/images/goats.jpeg" class="vertical">
+                </div>
+        </section>
+
+        <a class="book" href="./supplements.html">Check out Supplements</a>
+    </main>
+
+    <footer>
+        <div class="f-links">
+            <div class="f-logo">
+                <img src="/images/Chanone7_Logo_Horizontal.svg">
+                <!--<span>&copy; Copyright. Chanone 7. All Rights Reserved.</span>-->
+            </div class="f-sublinks">
+            
+            <ul>
+                <li>Quick Links</li>
+                <li><a href="/index.html">HomePage</a></li>
+                <li><a href="/qna.html">Frequently Asked Questions</a></li>
+            </ul>
+            <ul>
+                <li>Quick Links</li>
+                <li><a href="/aboutus.html">About Us</a></li>
+                <li><a href="/report.html">Report a Problem</a></li>
+            </ul>
+            <!--
+            <ul>
+                <li>Products</li>
+                <li><a href="#">Food Mood</a></li>
+                <li><a href="#">Supplements</a></li>
+            </ul>-->
+        </div>
+    
+        <div class="f-links2">
+            <div class="icons">
+                <a href="https://www.facebook.com/profile.php?id=100078430196011" target="_blank"><svg class="facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/></svg></a>
+                <a href="https://www.linkedin.com/company/chanone-7/" target="_blank"><svg class="linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+                <a href="https://twitter.com/Chanone_7" target="_blank"><svg class="twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"/></svg></a>
+                <a href="https://www.youtube.com/channel/UCAOGPsNnXTOLpUAdVTsMaKg" target="_blank"><svg class="youtube" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M186.8 202.1l95.2 54.1-95.2 54.1V202.1zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-42 176.3s0-59.6-7.6-88.2c-4.2-15.8-16.5-28.2-32.2-32.4C337.9 128 224 128 224 128s-113.9 0-142.2 7.7c-15.7 4.2-28 16.6-32.2 32.4-7.6 28.5-7.6 88.2-7.6 88.2s0 59.6 7.6 88.2c4.2 15.8 16.5 27.7 32.2 31.9C110.1 384 224 384 224 384s113.9 0 142.2-7.7c15.7-4.2 28-16.1 32.2-31.9 7.6-28.5 7.6-88.1 7.6-88.1z"/></svg></a>
+                <a href="https://www.instagram.com/chanone_7/?igshid=Y2ZmNzg0YzQ%3D" target="_blank"><svg class="instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"/></svg></a>
+            </div>
+        </div>
+    </footer>
+    <script src="/scripts/languages/foodmood-lang.js"></script>
+</body>
+</html>

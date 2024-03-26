@@ -1,0 +1,13 @@
+@import "./master.css";
+
+.viewappt {
+    display:block; 
+    text-align:center; 
+    margin:1em auto; 
+    padding: 1em;
+    background-color: var(--primary-color);
+    color: white;
+    width: 300px;
+    border-radius: 5px;
+}
+

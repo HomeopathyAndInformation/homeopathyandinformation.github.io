@@ -1,0 +1,10 @@
+@import "/styles/consultation.css";
+
+.calendly-inline-widget {
+    min-width: 320px;
+    height: 930px;
+}
+
+form {
+    background-color: red;
+}

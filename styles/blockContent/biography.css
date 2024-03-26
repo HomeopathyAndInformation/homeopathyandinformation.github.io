@@ -1,0 +1,79 @@
+@import "/styles/master.css";
+
+.biography h1 {
+    margin: 1em;
+}
+
+.biography p {
+    line-height: 2em;
+}
+
+.biography section {
+    margin: 1.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.biography div {
+    width: auto;
+    margin: 0 1em;
+}
+
+.biography img {
+    max-width: 120px;
+    max-height: 100%;
+
+    border-radius: 10px !important;
+    box-shadow: 1px -1px 10px gray !important;
+}
+
+.biography .mid-image {
+    max-width: 400px;
+}
+
+.biography .middle-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 2em;
+}
+
+.bio-focus {
+    font-weight: 700;
+}
+
+.bio-italic {
+    font-style: italic;
+}
+
+.book {
+    display: block;
+    text-align: center;
+
+    color: var(--text-color-bright);
+    background-color: var(--button-color);
+
+    margin: 2em auto;
+    padding: 1em 0;
+
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1.3em;
+
+    width: 60%;
+
+    transition: all 0.3s linear;
+}
+
+/************************************************/
+/******************MEDIA QUERIES*****************/
+/************************************************/
+
+@media (max-width: 650px) {
+    .biography section {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

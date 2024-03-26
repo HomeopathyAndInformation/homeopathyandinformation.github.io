@@ -1,0 +1,69 @@
+@import "/styles/master.css";
+
+.holistic-philosophy h1 {
+    margin: 2em 1em 1em 1em;
+}
+
+.holistic-philosophy p {
+    margin: 1.5em 2.3em;
+    line-height: 2em;
+}
+
+.holistic-focus {
+    font-weight: 700;
+}
+
+.holistic-philosophy div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 2em;
+}
+
+.holistic-philosophy .middle-img {
+    gap: 2em;
+    margin-top: 1em;
+}
+
+.holistic-philosophy img {
+    max-width: 300px;
+    max-height: 100%;
+
+    border-radius: 10px !important;
+    box-shadow: 1px -1px 10px gray !important;
+}
+
+.holistic-philosophy a {
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.holistic-philosophy .book {
+    display: block;
+    text-align: center;
+
+    color: var(--text-color-bright);
+    background-color: var(--button-color);
+
+    margin: 2em auto;
+    padding: 1em 0;
+
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1.3em;
+
+    width: 60%;
+
+    transition: all 0.3s linear;
+}
+
+/************************************************/
+/*******************MEDIA QUERY******************/
+/************************************************/
+
+@media (max-width: 1200px) {
+    .holistic-philosophy div {
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,425 @@
+@import "reset.css";
+
+/* import Google Fonts */
+
+/* Roboto Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Enriqueta Font */
+@import url('https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600;700&display=swap');
+
+/* Convergence Font */
+@import url('https://fonts.googleapis.com/css2?family=Convergence&display=swap');
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Pacifio";
+    src: local("Pacifio Regular");
+    font-display: swap;
+}
+
+/************************************************/
+/***************GLOBAL SETTINGS******************/
+/************************************************/
+
+:root {
+    /* set variables */
+    --background-color: #fff;
+    --footer-color: #d3d3d3;
+
+    --primary-color: #1f9caf;
+    --primary-hover: #126c8b;
+
+    --button-color: #fe9f5b;
+    --button-hover: #dc7d39;
+
+    --introductory-color: #f3f3f3;
+    --transcript-color: #d3d3d3;
+
+    --testimonials-color: #939393;
+    --testimonials-title: #333;
+    --testimonials-text: #222;
+
+    --text-color: #000;
+    --text-color-bright: #fff;
+    --pricing-bg: #f5f5f5;
+
+    --facebook-color: #3b5998;
+    --twitter-color: #00acee;
+    --linkedin-color: #0077b5;
+    --youtube-color: #FF0000;
+    --instagram-color: #fa7e1e;
+
+    --font-button: 'Roboto', sans-serif; /*Button*/
+    --font-p: 'Calibri', sans-serif; /*Paragraph*/
+    --font-heading: 'Convergence', sans-serif; /*Heading*/
+}
+
+body {
+    font-size: 16px;
+
+    width: 100%;
+    height: 100%;/*
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;*/
+}
+
+h1 {
+    font-family: var(--font-heading);
+    font-size: 3em;
+}
+
+h2 {
+    font-family: var(--font-heading);
+    font-size: 1.3em;
+}
+
+p {
+    font-family: var(--font-p);
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+a {
+    font-family: var(--font-button);
+    font-weight: 600;
+}
+
+strong {
+    font-weight: 600;
+}
+
+.quote {
+    font-family: var(--font-heading) !important;
+    display: block !important;
+    margin: 1.5em auto !important;
+    color: gray !important;
+    max-width: 75%;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+
+/************************************************/
+/*************HEADER NAV & FOOTER****************/
+/************************************************/
+
+header img, footer img {
+    width: 20em;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 0.5em;
+    row-gap: 1em;
+
+    padding: 1em;
+    margin: 0 6em;
+}
+
+.header label {
+    font-size: 30px;
+    color: var(--primary-color);
+    cursor: pointer;
+    display: none;
+    margin: 0 auto;
+}
+
+.header input[type="checkbox"] {
+    display: none;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1.5em;
+}
+
+header i {
+    vertical-align: middle;
+    display: inline-block;
+    color: var(--primary-color);
+    transition: all 0.3s linear;
+}
+
+header i:hover {
+    color: var(--primary-hover);
+}
+
+/*navigation*/
+nav {
+    text-transform: uppercase;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.3em;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+/*navigation link styling*/
+nav a {
+    color: var(--text-color);
+    border-style: none;
+    transition: border 0.2s ease-out, color 0.2s ease-out;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+    border-style: none none solid none;
+    border-width: 4px;
+    border-color: var(--primary-color);
+}
+
+.invisiblenav {
+    display: none;
+    overflow: hidden;
+}
+
+/*languages image*/
+nav img {
+    width: 1.4em;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+nav img:hover {
+    fill: var(--primary-hover);
+    color: var(--primary-hover);
+}
+
+nav section {
+    text-align: center;
+    padding: 0.5em;
+    /*border: solid 2px var(--primary-color);*/
+    background-color: var(--background-color);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 1em;
+
+    /*display: none;*/
+}
+
+hr {
+    border: 1px solid var(--text-color);
+    text-align: center;
+}
+
+nav p {
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+nav p:hover {
+    color: var(--primary-color);
+}
+
+.popup-verify {
+    display: block;
+    font-size: 1.1em;
+    font-family: var(--font-button);
+    padding: 1em;
+    background-color: var(--footer-color);
+    text-align: center;
+}
+
+.popup-verify a {
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.popup-verify a:hover {
+    color: var(--primary-hover);
+}
+
+
+/*static currently viewing page button color*/
+.activelink {
+    color: var(--primary-color);
+    border: none !important;
+}
+
+footer {
+    background-color: var(--footer-color);
+    padding: 4em 0;
+    margin-top: 1em;
+}
+
+footer .f-links {
+    margin: 0 6em;
+}
+
+footer .f-links, footer .f-links2 {
+    margin: 3em 6em;
+}
+
+footer .f-links {
+    display: flex;
+    flex-direction: row;
+    gap: 13em;
+}
+
+footer .f-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+footer span {
+    font-weight: 600;
+    font-size: 0.8em;
+    color: var(--testimonials-text);
+    margin-top: 0.5em;
+}
+
+footer li {
+    margin: 1em 0;
+    font-weight: 600;
+    font-family: var(--font-heading);
+    font-size: 1.3em;
+}
+
+footer li a {
+    font-weight: 500;
+    font-size: 0.7em;
+    font-family: var(--font-button);
+    color: var(--testimonials-text);
+    text-transform: capitalize;
+    border-style: none;
+    border-width: 0px;
+    transition: all 0.5s linear;
+}
+
+footer li a:hover {
+    color: var(--text-color);
+    border-style: none none solid none;
+    border-width: 2px;
+}
+
+footer img {
+    max-width: 100%;
+}
+
+footer svg {
+    max-width: 2em;
+    max-height: 2em;
+    margin-right: 0.8em;
+}
+
+.facebook {
+    color: var(--facebook-color) !important;
+    fill: var(--facebook-color) !important;
+}
+
+.linkedin {
+    color: var(--linkedin-color) !important;
+    fill: var(--linkedin-color) !important;
+}
+
+.twitter {
+    color: var(--twitter-color) !important;
+    fill: var(--twitter-color) !important;
+}
+
+.youtube {
+    color: var(--youtube-color) !important;
+    fill: var(--youtube-color) !important;
+}
+
+.instagram {
+    color: var(--instagram-color) !important;
+    fill: var(--instagram-color) !important;
+}
+
+/************************************************/
+/********************CAROUSEL********************/
+/************************************************/
+
+.carousel {
+    margin: 0 5em;
+    background-color: transparent;
+    transition: all 0.2s ease-in;
+}
+
+.carousel:hover {
+    background-color: var(--pricing-bg);
+    cursor: grab;
+}
+
+.owl-carousel div {
+    text-align: center;
+}
+
+.owl-carousel p {
+    margin-top: 1em;
+    font-size: 1.3em;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/************************************************/
+/*****************MEDIA QUERIES******************/
+/************************************************/
+
+@media (max-width: 1300px) {
+    footer .f-links {
+        flex-wrap: wrap;
+    }
+}
+
+/* Squeeze content into phone size */
+@media (max-width: 600px){
+    .header label {
+        display: block;
+    }
+    nav {
+        flex-direction: column;
+        row-gap: 20px;
+        position: fixed;
+        left: -100%;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    .mini-menu {
+        position: static;
+        left: 0;
+    }
+}
+
+/*put menu bar button under logo*/
+@media (max-width: 400px){
+    header {
+        flex-direction: column;
+    }
+}
+

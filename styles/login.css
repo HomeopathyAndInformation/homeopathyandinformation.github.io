@@ -1,0 +1,134 @@
+@import "/styles/master.css";
+
+.login-page {
+    background-color: var(--background-color);
+
+    margin: 2em 20em;
+    padding: 3em;
+    border-radius: 10px;
+    box-shadow: 0 0 0 0.6em var(--primary-color);
+}
+
+.login-page h1, .login-page h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1em;
+}
+
+.login-page form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}
+
+.login-page input, .login-page button {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.login-page label {
+    text-align: center;
+    font-family: var(--font-button);
+    font-weight: bold;
+    font-size: 1.3em;
+    color: var(--primary-color);
+}
+
+.login-page input {
+    text-decoration: none;
+    font-family: var(--font-button);
+    font-size: 1.1em;
+    height: 1.5em;
+}
+
+.login-page label input {
+    width: 10%;
+    font-size: 0.8em;
+}
+
+.login-page .nocenter {
+    margin: 2em auto;
+}
+
+.login-page section {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 8em;
+    justify-content: center;
+}
+
+.login-page section a {
+    font-weight: bold;
+    color: var(--primary-color);
+    transition: all 0.2s linear;
+}
+
+.login-page section a:hover {
+    color: var(--primary-hover);
+}
+
+.login-page button {
+    font-size: 1.4em;
+    font-family: var(--font-button);
+    text-align: center;
+
+    color: var(--text-color-bright);
+    background-color: var(--primary-color);
+
+    padding: 0.3em 0;
+
+    border-radius: 5px;
+    border: none;
+
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.login-page button:hover {
+    background-color: var(--primary-hover);
+}
+
+.error {
+    text-align: center;
+    font-size: 0.8em;
+    color: var(--button-color);
+    font-family: var(--font-button);
+}
+
+i {
+    color: var(--primary-color);
+    text-align: center;
+    cursor: pointer;
+}
+
+.g-recaptcha {
+    margin: 0 auto;
+}
+
+/************************************************/
+/*****************Media Queries******************/
+/************************************************/
+
+@media (max-width: 900px) {
+    .login-page {
+        margin: 2em 10em;
+    }
+}
+
+@media (max-width: 550px) {
+    .login-page {
+        margin: 2em 1em;
+    }
+    .login-page input, .login-page button {
+        width: 80%;
+    }
+}
+
+@media (max-width: 550px) {
+    .login-page section {
+        flex-wrap: wrap;
+        gap: 2em;
+    }
+}

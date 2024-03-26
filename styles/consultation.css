@@ -1,0 +1,348 @@
+@import "/styles/master.css";
+
+.consult  {
+    margin: 1em 2em;
+}
+
+.consult h1, h2 {
+    margin: 1em;
+}
+
+.consult section {
+    text-align: center;
+}
+
+#meet a, #emergency a, #follow a {
+    display: block;
+    margin: 1em auto;
+    padding: 1em;
+    max-width: 10em;
+    text-align: center;
+
+    border-style: solid;
+    border-width: 3px;
+    color: var(--text-color);
+    transition: all linear 0.5s;
+}
+
+.consult section a {
+    display: block;
+    margin: 1em auto;
+    padding: 1em;
+    max-width: 10em;
+
+    border-style: solid;
+    border-width: 3px;
+    color: var(--text-color);
+    transition: all linear 0.5s;
+}
+
+.consult section a:hover {
+    color: var(--primary-hover);
+}
+
+.activelink2 {
+    color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    border-style: solid !important;
+    border-width: 3px !important;
+}
+
+.consult form {
+    border-style: solid;
+    border-width: 3px;
+    padding: 2em;
+}
+
+.consult form  h2{
+    text-align: center;
+}
+
+.consult form h3 {
+    font-size: 1.3em;
+    margin: 1em 0;
+    line-height: 1.5em;
+}
+
+.consult form .nb {
+    color: #555;
+    font-size: 1.1em;
+}
+
+.consult form .disclaimer {
+    font-weight: 600;
+}
+
+.consult form p {
+    margin: 1em 0;
+    line-height: 1.5em;
+}
+
+.consult form fieldset {
+    margin: 0 2em;
+}
+
+.consult form legend {
+    margin: 0 auto;
+    font-family: var(--font-heading);
+    font-size: 1.3em;
+}
+
+.pricing-steps {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    border-style: none !important;
+}
+
+.pricing-step {
+    background-color: var(--primary-color);
+
+    border-radius: 10px;
+    padding: 1.5em;
+
+    max-width: 30%;
+
+    border-style: none !important;
+}
+
+.pricing-step h2, .pricing-step p {
+    margin-bottom: 1em;
+    text-align: center;
+    color: var(--text-color-bright);
+}
+
+.pricing-step h2 {
+    font-weight: 600;
+    font-size: 1.6em;
+}
+
+.consult form button {
+    display: block;
+    margin: 1em auto;
+    padding: 1em;
+    max-width: 10em;
+    text-align: center;
+
+    font-family: var(--font-button);
+    font-size: 1.1em;
+
+    color: var(--text-color-bright);
+
+    background-color: var(--primary-color);
+
+    border-style: none;
+
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.consult form button:hover {
+    background-color: var(--primary-hover);
+}
+
+.visibleconsult {
+    display: block;
+}
+
+.invisconsult {
+    display: none !important;
+    overflow: hidden !important;
+}
+
+.hidden {
+    display: none;
+    overflow: hidden;
+}
+
+.consent {
+    display: block;
+    margin: 1em auto;
+    padding: 1em;
+    max-width: 10em;
+
+    text-align: center;
+
+    border-style: solid;
+    border-width: 3px;
+}
+
+.error {
+    display: block;
+    margin-top: 1em;
+
+    text-align: center;
+    font-size: 0.9em;
+    color: var(--button-color);
+    font-family: var(--font-button);
+}
+
+/*INTAKE ASSESSMENT STYLING */
+
+.consult form label {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 0.5em;
+}
+
+.consult form input {
+    font-size: 1em;
+    max-height: 2em;
+}
+
+.consult form input[disabled], .consult form input::placeholder {
+    color: black;
+}
+.grouping {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 2em;
+}
+
+.subgrouping {
+    display: flex;
+    flex-direction: column;
+}
+
+#address, #email{
+    width: 75%;
+}
+
+#pcp, #pcpName, #pcpCondition, #pcpDoT, #pcpPhone, #healthConcerns, #healthConcerns2 {
+    width: 100%;
+}
+
+label[for="pcpName"], label[for="pcpCondition"], label[for="pcpDoT"], label[for="pcpPhone"], label[for="healthConcerns"], label[for="healthConcerns2"] {
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 23%;
+}
+
+label[for="email"] {
+    width: 40%;
+}
+
+.aligninput {
+    justify-content: space-between;
+}
+
+.transparent {
+    color: transparent;
+}
+
+.symptoms {
+    flex-wrap: wrap;
+}
+
+.symptoms label {
+    flex-basis: 5%;
+    max-height: 6em;
+    max-width: 20em;
+}
+
+input:disabled {
+    color: black;
+}
+
+.table p {
+    text-align: center;
+}
+
+.table label {
+    width: 13em;
+}
+.table input {
+    width: 100%;
+    height: 2em;
+}
+
+.consentsection {
+    display: none;
+}
+
+.signature-pad {  
+    margin: 1em 0;
+    cursor: url(pen.png) 1 26, pointer;  
+    border: 2px solid var(--text-color);  
+    border-radius: 4px;
+}
+
+h4 {
+    font-size: 1.1em;
+    font-family: var(--font-button);
+}
+
+a h4:hover {
+    color: var(--button-color);
+}
+
+.clear-button {  
+    color: var(--primary-color);
+}
+
+/************************************************/
+/*****************MEDIA QUERIES******************/
+/************************************************/
+
+@media (pointer: coarse) {  
+    body {    
+        overflow: hidden; /* Needed to prevent the vertical scroll on touch devices */  
+    }
+}
+
+@media (max-width: 1000px) {
+    .pricing-steps {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .pricing-steps {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pricing-step {
+        max-width: 95%;
+    }
+}
+
+
+/*MEDIA QUERY*/
+@media (max-width: 704px) {
+    .grouping {
+        flex-direction: column;
+        row-gap: 2em;
+    }
+    .consult form label {
+        flex-direction: column;
+    }
+}
+
+/*
+@media (max-width: 742px) {
+    .consult form {
+        padding: 1em;
+    }
+    .consult form label {
+        justify-content: space-evenly;
+        margin-left: 0;
+    }
+    label[for="state"], label[for="zip"] {
+        flex-basis: 100%;
+    }
+
+    input[type="radio"] {
+        margin-left: 0;
+    }
+    #state, #zip {
+        width: 100%;
+    }
+}
+*/

@@ -1,0 +1,75 @@
+@import "/styles/master.css";
+
+#payment-form {
+    max-width: 60em;
+    height: auto;
+    margin: 2em auto;
+    padding: 1em 2em;
+
+    box-shadow: 0 0 8px 3px #ddd;
+    border-radius: 10px;
+
+    background-color: white;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#payment-form h2 {
+    margin: 0 0 1em 0;
+}
+
+#payment-form p {
+    margin: 1em 0 0.5em 0;
+    font-family: var(--font-button);
+}
+
+#payment-form span {
+    font-size: 1em;
+    font-weight: bold;
+    font-family: var(--font-header);
+}
+
+#payment-form input {
+    font-size: 1em;
+
+    padding: 0 0.5em;
+
+    height: 3em;
+    
+    border-radius: 5px;
+    border: 2px solid #666;
+}
+#payment-form input:focus, form div:focus {
+    border-color: var(--primary-color);
+}
+
+#payment-form div {
+    font-size: 1em;
+
+    height: 3em;
+
+    border: 2px solid #666;
+}
+
+#payment-form button {
+    height: 2.5em;
+    min-width: 15em;
+    margin: 2em auto;
+
+    background-color: var(--primary-color);
+    color: #fff;
+
+    border: none;
+    border-radius: 20px;
+
+    font-size: 1em;
+    font-family: var(--font-button);
+
+    cursor: pointer;
+}
+
+#payment-form button:hover {
+    background-color: var(--primary-hover);
+}
